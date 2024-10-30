@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Використання оператора IF</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<script> "use strict";
+let dice = Math.floor(Math.random() * 6) + 1; // Генерація випадкового числа від 1 до 6
+let f = true;
+let guess;
+let count = 0;
+
+let answer = confirm("Хочете зіграти в гру?");
+
+if (answer) {
+    while (f) {
+        guess = parseInt(prompt("Вгадайте число від 1 до 6"));
+        count++;
+
+        if (guess < 1 || guess > 6 || isNaN(guess)) {
+            alert("Будь ласка, введіть число в діапазоні від 1 до 6.");
+            count--; // Не рахувати невірні спроби
+        } else if (guess === dice) {
+            alert("Ви вгадали! Число: " + dice + "\nКількість спроб: " + count);
+            f = false;
+        } else {
+            alert("Не вгадали! Спробуйте ще раз.");
+        }
+    }
+} else {
+    alert("Шкода, що ви не хочете грати. Може бути в інший раз!");
+}
+</script>
+
+<div class="center">
+    <ul class="list">
+        <li><button class="home"><a href="../index.html">Повернутися на головну сторінку</a></button></li>
+    </ul>
+</div>
+
+</body>
+</html>

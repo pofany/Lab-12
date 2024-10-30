@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Використання оператора IF</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    "use strict";
+    document.write("<p>Використання оператора циклу	<b>FOR</b></p>");
+    // вивід фрази побуквено з табуляцією
+    let x = "Hello world!";
+    for (let i = 0; i <= x.length - 1; i++) {
+        document.write(x[i] + " \t");
+    }
+
+    document.write("<p>Використання оператора циклу <b>WHILE</b></p>");
+    let word = "While";
+    let i = 0; // Ініціалізація змінної i
+    while (i < word.length) {
+        document.write(i + "\t\t" + word + "<br>");
+        i++;
+    }
+
+    document.write("<p>Використання оператора циклу <b>DO WHILE</b></p>");
+    let y = 0;
+    do {
+        document.write(y);
+        document.write("\t\t\t\t\t")
+        y++;
+    }
+    while (y < 10);
+</script>
+
+<div class="center">
+    <ul class="list">
+        <li><button class="home"><a href="../index.html">Повернутися на головну сторінку</a></button></li>
+    </ul>
+</div>
+
+</body>
+</html>

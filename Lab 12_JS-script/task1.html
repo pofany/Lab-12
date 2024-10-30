@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Використання оператора IF</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    "use strict";
+    document.write("<h1>Робота з оператором IF</h1>");
+    try {
+        // Задаємо змінну lang, яку вводить користувач
+        let lang = prompt("Введіть мову (ua, en, pl, de):");
+
+        if (lang === "ua") {
+            document.write("<p>українська</p>");
+        } else if (lang === "en") {
+            document.write("<p>англійська</p>");
+        } else if (lang === "pl") {
+            document.write("<p>польська</p>");
+        } else if (lang === "de") {
+            document.write("<p>німецька</p>");
+        } else {
+            document.write("<p>Мову невизначено</p>");
+        }
+    } catch (e) {
+        document.write("<p>Помилка вводу</p>");
+    }
+
+</script>
+
+<div class="center">
+    <ul class="list">
+        <li><button class="home"><a href="../index.html">Повернутися на головну сторінку</a></button></li>
+    </ul>
+</div>
+
+</body>
+</html>

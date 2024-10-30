@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Використання оператора SWITCH</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    "use strict";
+    document.write("<h1>Робота з Switch</h1>");
+    let arg = prompt("Введіть число", "");
+    switch (arg) {
+        case '0':
+        case '1':
+            document.write( '<p>Один або нуль</p>' );
+            break;
+
+        case '2':
+            document.write( '<p>Два</p>' );
+            break;
+
+        default:
+            document.write( '<p>Галя що це за велике число</p>' );
+    }
+</script>
+
+<div class="center">
+    <ul class="list">
+        <li><button class="home"><a href="../index.html">Повернутися на головну сторінку</a></button></li>
+    </ul>
+</div>
+
+</body>
+</html>

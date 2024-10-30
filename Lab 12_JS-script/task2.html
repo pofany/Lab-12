@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Використання оператора IF</title>
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    "use strict";
+     //перевірка на високосний рік
+    document.write("<h1>Робота з IF та умовними операціями</h1>");
+    try {
+        let year = prompt("Введіть рік, щоб дізнатись чи він високосний чи ні", "");
+
+        // Перетворимо введене значення на число
+        year = parseInt(year);
+
+        if (isNaN(year)) {
+            document.write("<p>Будь ласка, введіть коректний рік!</p>");
+        } else if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+            document.write("<p>Так, це високосний рік</p>");
+        } else {
+            document.write("<p>Ні, не високосний рік</p>");
+        }
+    } catch (e) {
+        document.write("<p>Щось пішло не так!</p>");
+    }
+
+</script>
+
+<div class="center">
+    <ul class="list">
+        <li><button class="home"><a href="../index.html">Повернутися на головну сторінку</a></button></li>
+    </ul>
+</div>
+
+</body>
+</html>
